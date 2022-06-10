@@ -2,6 +2,11 @@
 @{
     Layout="_RecepieLayout";
 }
+
+<h6>
+    Welcome Back @Model.User.name !
+</h6>
+
 <div style="float:right;">
    <div class="dropdown">
     <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -15,10 +20,110 @@
     </div>
 </div>
 
-<h1>
-    Welcome @Model.User.name !
-    Go to Recepie Page  <a asp-action="Recepies" asp-controller="Recepies">Recepies</a>
-</h1>
-<div>
-    @Model.User.UserId
+<div class="row">
+    <div class="col-md-3">
+        <img src="~/Images/chef.jpg" style="max-width: 300px; min-height:200px;"/>
+    </div>
+    <div class="col-md-9 p-2 text-center">
+        <br/>
+        <h1> Our Chef's Today <b>Special</b> </h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+             sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </p><br/>
+        <hr/><br/>
+        <div class="row">
+            <div class="col-md-4">
+                <div style="background-color:#EDE6E4;">
+                    <br/>
+                    <i class="fas fa-drumstick-bite" style="font-size:50px;"></i><br/>
+                    <h5 style="max-width:200px; margin:auto;">Yougurt Cherry Chicken</h5><br/>
+                    <button class="btn btn-success">$115</button><br/><br/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background-color:#EDE6E4;">
+                    <br/>
+                    <i class="fas fa-cheese" style="font-size:50px;"></i><br/>
+                    <h5 style="max-width:200px; margin:auto;">Yougurt Cherry Chicken</h5><br/>
+                    <button class="btn btn-success">$120</button><br/><br/>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div style="background-color:#EDE6E4;">
+                    <br/>
+                    <i class="fas fa-hamburger" style="font-size:50px;"></i><br/>
+                    <h5 style="max-width:200px; margin:auto;">Yougurt Cherry Chicken</h5><br/>
+                    <button class="btn btn-success">$135</button><br/><br/>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<br/> <br/>
+
+<style>
+    
+</style>
+
+<div class="row container" >
+    <div class="col-md-3" style="text-align:center;">
+        <div>
+            <h6>Latest Recepies</h6>
+            <hr />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div>
+            <h6>African Recepies</h6>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div>
+            <h6>Indian Recepies</h6>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div>
+            <h6>American Recepies</h6>
+        </div>
+    </div>
+</div>
+
+
+<br/><br/>
+<div class="row">
+    <div class="col-md-6 d-flex " >
+        <div class="row container" style="background-color:#EDE6E4;">
+            <div class="col-md-10 pt-5" > 
+                <h4>
+                    Get that “I’m ready for my certification exam” feeling
+                </h4>
+                <p>
+                    Earn a Professional Cooking Certificate From Leading Institutes
+                </p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="col-md-2">
+                <img src="~/Images/cook.jpg" style="max-width: 130px; min-height:200px;"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 d-flex" >
+        <div class="row container " style="background-color:#EDE6E4;">
+            <div class="col-md-10 pt-5" > 
+                <h4>
+                    Get that “I’m ready for my certification exam” feeling
+                </h4>
+                <p>
+                    Earn a Professional Cooking Certificate From Leading Institutes
+                </p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="col-md-2">
+                <img src="~/Images/cook.jpg" style="max-width: 130px; min-height:200px;"/>
+            </div>
+        </div>
+    </div>
 </div>

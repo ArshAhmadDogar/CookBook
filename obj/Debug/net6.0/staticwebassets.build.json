@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mrp/aMPa9Er7BeD/5PUTxDQS8FhuMuLJuutt8fWFn4g=",
+  "Hash": "Sm1ciZCFK2SmC0mBTiW6DYOCuigR13F1L000LTo03nc=",
   "Source": "CookBook",
   "BasePath": "_content/CookBook",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\butterycroisants.jpg"
+    },
+    {
+      "Identity": "D:\\DotNet\\CookBook\\wwwroot\\Images\\cook.jpg",
+      "SourceId": "CookBook",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DotNet\\CookBook\\wwwroot\\",
+      "BasePath": "_content/CookBook",
+      "RelativePath": "Images/cook.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\cook.jpg"
     },
     {
       "Identity": "D:\\DotNet\\CookBook\\wwwroot\\Images\\cookgirl.jpg",
