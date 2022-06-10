@@ -55,6 +55,22 @@ public class RecepiesController : Controller
             return View();
         }
 
+        public ViewResult UserProfile(User usr)
+        {
+            dynamic mymodel = new ExpandoObject();
+            var user  = _recepie.Users.Where(x=>x.email == usr.email && x.password == usr.password).FirstOrDefault();
+            mymodel.User = user;
+            return View(mymodel);
+        }
+
+        public ViewResult Profile(int id)
+        {
+            var user = _recepie.Users.Find(id);
+            return View(user);
+        }
+
+        
+
 
 }
 }

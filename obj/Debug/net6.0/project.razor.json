@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\DotNet\\CookBook\\Views\\Recepies\\UserProfile.cshtml",
+      "TargetPath": "Views\\Recepies\\UserProfile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\DotNet\\CookBook\\Views\\Recepies\\Details.cshtml",
       "TargetPath": "Views\\Recepies\\Details.cshtml",
       "FileKind": "mvc"
@@ -16360,6 +16365,11 @@
     {
       "FilePath": "d:\\DotNet\\CookBook\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\DotNet\\CookBook\\Views\\Recepies\\Profile.cshtml",
+      "TargetPath": "Views\\Recepies\\Profile.cshtml",
       "FileKind": "mvc"
     },
     {

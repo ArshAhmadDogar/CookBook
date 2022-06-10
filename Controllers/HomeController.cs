@@ -43,7 +43,7 @@ public class HomeController : Controller
         var User = _recepie.Users.Where(s => s.email==usr.email && s.password == usr.password).FirstOrDefault();
         if (User!=null && usr.email == User.email && usr.password ==User.password )
         {
-            return RedirectToAction("Recepies","Recepies");
+            return RedirectToAction("UserProfile","Recepies",User);
         }else {
             return RedirectToAction("Index","Home");
         }

@@ -47,8 +47,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXBpZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DotNet/CookBook/Views/Recepies/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXBpZXNcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DotNet/CookBook/Views/Recepies/Recepies.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXBpZXNcUmVjZXBpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DotNet/CookBook/Views/Recepies/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXBpZXNcVXNlclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DotNet/CookBook/Views/Shared/Error.cshtml]

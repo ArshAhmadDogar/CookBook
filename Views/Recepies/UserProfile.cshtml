@@ -1,0 +1,24 @@
+@model dynamic
+@{
+    Layout="_RecepieLayout";
+}
+<div style="float:right;">
+   <div class="dropdown">
+    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        @Model.User.name
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li>@Html.ActionLink("Profile","Profile","Recepies",new{id=@Model.User.UserId},new{@class="dropdown-item"})</li>
+        <li><a class="dropdown-item" href="#">My Recepies</a></li>
+    </ul>
+    </div>
+</div>
+
+<h1>
+    Welcome @Model.User.name !
+    Go to Recepie Page  <a asp-action="Recepies" asp-controller="Recepies">Recepies</a>
+</h1>
+<div>
+    @Model.User.UserId
+</div>
