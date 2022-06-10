@@ -1,0 +1,49 @@
+@model CookBook.Models.Recepie
+@{
+    Layout="_RecepieLayout";
+}
+
+<div class="" style="margin:auto; max-width:700px;">
+    <div class="text-center">
+        <h1>Add New Recepie</h1>
+    </div>
+    <form class="row form-inline justify-content-center" method="post" asp-action="CreateNew">
+        <div class="form-group col-md-6">
+            <label asp-for="name" class="form-label" ></label>
+            <input asp-for="name" class="form-control"/>
+        </div><br/><br/><br/>
+        <div class="form-group col-md-6">
+            <label asp-for="price" class="form-label"></label>
+            <input asp-for="price" type="number" class="form-control"/>
+        </div><br/><br/><br/>
+        <div class="form-group col-md-4">
+            <label asp-for="Category" class="form-label" ></label>
+            <select asp-for="Category" class="form-select" id="inlineFormSelectPref">
+            <option selected>Choose...</option>
+            <option value="Africans">Africans</option>
+            <option value="Indian">Indian</option>
+            <option value="Canadian">Canadian</option>
+            </select>
+        </div><br/><br/><br/>
+        <div class="form-group col-md-8">
+            <label asp-for="Description" class="form-label" ></label>
+            <input asp-for="Description" type="textarea" class="form-control"/>
+        </div><br/><br/><br/>
+        <div class="form-group col-md-10">
+            <label asp-for="Ingredients" class="form-label" ></label>
+            <input asp-for="Ingredients" class="form-control"/>
+        </div><br/><br/><br/>
+        <div class="form-group col-md-2">
+            <label asp-for="UserId" class="form-label"></label>
+            <input asp-for="UserId" class="form-control"/>
+        </div><br/>
+        <div class="form-group col-md-2">
+            <label asp-for="Image" class="form-label"></label>
+            <input asp-for="Image" class="form-control" accept="image/*"/>
+        </div><br/>
+        <div>
+            <button class="btn btn-primary " style="max-width:150px; max-height:40px;">Add Recepie</button>
+        </div>
+      
+    </form>
+</div>

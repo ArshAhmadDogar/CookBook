@@ -1,0 +1,70 @@
+@* @model MyProject.Models.Recepie *@
+@* @using MultipleModelInOneView; *@
+@model dynamic
+
+@{
+    Layout="_RecepieLayout";
+}
+
+<div class="row">
+        <div class="col-md-5 col-sm-12" >
+            <img src="~/Images/fishsoup.jpg" style="max-width:500px;"/>
+        </div>
+        <div class="col-md-7">
+            <h1>
+                @Model.Recepie.Category
+            </h1>
+            <p>
+                @Model.Recepie.name
+            </p>
+            <p>
+                Created by @Model.User.name
+            </p>
+            <p>
+                @Model.Recepie.Description
+            </p>
+            <p>
+                @Model.Recepie.Ingredients
+            </p>
+
+        </div>
+</div>
+<br/><br/>
+<div class="row">
+    <div class="col-md-6" style="max-width:;">
+        <form asp-action="Comments" method="post">
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input  type="text" name="name" class="form-control"/>
+            </div><br/>
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input  type="text" name="email" class="form-control"/>
+            </div><br/>
+            <div class="form-group">
+            <label class="form-label" for="textAreaExample">Message</label>
+            <textarea class="form-control" name="Comment" id="textAreaExample1" rows="4"></textarea>
+            </div><br/><br/>
+            <div>
+                <button class="btn btn-primary" type="submit">Comment</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h1>Recent Comments</h1>
+        @foreach(var cmnt in Model.Comments)
+        {
+            <div>
+                <h4>Posted by @cmnt.name</h4>
+                <p>
+                    @cmnt.Comment
+                </p>
+            </div>
+        }
+    </div>
+</div>
+
+@* <a class="btn btn-success" asp-action="Main" asp-controller="Classes"> Classes</a> *@
+
+@* <partial name="Comments" model="Model.Comm" /> *@
+

@@ -1,0 +1,32 @@
+@{
+    Layout="_RecepieLayout";
+}
+@model IEnumerable<CookBook.Models.Recepie>
+
+<div class="container">
+    <div  class="container">
+        <form method="post" asp-action="Details">
+            <button class="btn btn-primary" style="float:right;" type="submit"> <i class="fa fa-search"></i></button>
+            <input type="search" style="float:right; min-width:250px; max-width:250px; " class="form-control" name="Search"/>
+        </form>
+    </div>
+</div><br/> <br/>
+<div class="row container">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="card" style="width: 19rem;">
+                <img src="~/Images/fishsoup.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>@item.Category</h3>
+                    <h6 class="card-title">@item.name</h6>
+                    <p class="card-text">@item.price $</p>
+                    @Html.ActionLink("Details","Details","Recepies",new{id=item.RecepieId}
+                    ,new{@class="btn btn-primary"})
+                </div>
+            </div>
+        </div>
+    }
+</div>  
+<br /><br/>
+<a asp-action="CreateNew" asp-controller="Recepies" class="btn btn-primary">Create New</a>

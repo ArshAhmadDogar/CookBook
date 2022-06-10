@@ -1,0 +1,50 @@
+@{
+    Layout="_RecepieLayout";
+}
+
+<div style="background-image:url('../Images/cookingclasses.jpg'); min-height:300px; background-size:cover;">
+    <div style="margin:auto;max-width:500px; padding-top:100px;" >
+        <p style="color:orange;">
+            Home/Cooking Classes
+        </p>
+        <h1 style="color:white;">
+            Cooking Classes
+        </h1>
+    </div>
+</div><br/><br/>
+<div style="margin:auto;max-width:500px; text-align:center;">
+    <h6>
+        Choose Your Class
+    </h6>
+    <h3>
+        Choose Your Class
+    </h3>
+</div><br/>
+<div class="row">
+    @for(var i=0;i<=7;i++ )
+    {   <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="../Images/cookingclasses.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bread Baking</h5>
+                    <p class="card-text">Augue feugait eos at, ut cum populo dolores. Inimicus maluisset argument sea et, 
+                        postea aliquid scriptorem et sea. No nam simul tantas esse viris laoreet percipit...</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div><br/>
+        </div>
+    }
+</div>
+<br/>
+<div style="margin:auto; max-width:500px;">
+    <button class="btn btn-warning btn-lg" style="color:white; margin-left:200px;">Load More</button>
+</div>
+<br/>
+<div style="margin:auto; max-width:800px; background-image:url('../Images/cookingclasses.jpg');min-height:150px; background-size:cover; color:white;" > 
+    <div style="color:white; padding-left:90px; padding-top:50px;">
+        <h2>Want to be a Chef</h2>
+        <p>Our Cooking School offer a variety of classes for students of all levels.</p>
+        @* <button>Send Request</button> *@
+    </div>
+</div>
+

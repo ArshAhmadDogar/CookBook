@@ -1,0 +1,24 @@
+@model CookBook.Models.User
+@{
+    Layout="_Layout";
+}
+
+<div style="margin:auto; max-width:500px;">
+    <form method="post" asp-action="Register">
+        <div class="form-outline mb-4">
+            <label asp-for="name"  class="control-label"></label>
+            <input asp-for="name" class="form-control"/>
+        </div>
+        <div class="form-outline mb-4">
+            <label asp-for="email"  class="control-label"></label>
+            <input asp-for="email" class="form-control"/>
+        </div>
+        <div class="form-outline mb-4">
+            <label asp-for="password"  class="control-label"></label>
+            <input asp-for="password" class="form-control"/>
+        </div>
+        <div>
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
